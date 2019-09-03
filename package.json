@@ -2,6 +2,7 @@
   "name": "chatapp",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "https://pavankumarpatruni.github.io/ChatApp",
   "dependencies": {
     "kaazing-enterprise-client": "^4.1.0",
     "react": "^16.9.0",
