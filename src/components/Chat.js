@@ -25,6 +25,11 @@ class Chat extends React.Component {
         this.messagesEndRef = createRef(null);
         this.scrollToBottom();
 
+        window.addEventListener("beforeunload", function(event) {
+            event.returnValue = "Changes that you made may not be saved.";
+            event.preventDefault();
+        });
+
         this.connection.onmessage = evt => {
             let message = {
                 user: "ChatBot",
